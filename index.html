@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Front end Develops</title>
+</head>
+
+<body>
+
+    <video loop="" autoplay="" muted="" src="src/video.mp4"></video>
+
+    <header>
+        <h1>Front end Develops no Brasil</h1>
+    </header>
+    <main>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="fecharPopup()">&times;</span>
+                <h2>Nenhum Front end Developer encontrado!</h2>
+                <p>Tente pesquisar novamente! Você pode encontrá-los pesquisando por seus nomes ou conhecimentos!</p>
+            </div>
+        </div>
+        <section class="pesquisa">
+            <p id="texto">Digite o nome do Profissional ou área de interesse</p>
+            <input type="text" placeholder="Digite o nome do Profissional ou área de interesse" id="campo-pesquisa" />
+            <div class="botoes">
+                <button onclick="pesquisar()">Buscar aqui</button>
+                <button onclick="sorte()">Estou com sorte!</button>
+            </div>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+
+        </section>
+    </main>
+    <footer>
+        <p>2024 - <a href="https://www.evertonpaixao.com.br" target="_blank">Everton Paixão</a> - Imersão Alura. Todos
+            os direitos reservados</p>
+    </footer>
+    <script src="src/dados.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/extra.js"></script>
+</body>
+
+</html>
